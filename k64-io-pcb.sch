@@ -1,0 +1,1796 @@
+EESchema Schematic File Version 4
+LIBS:k64-io-pcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title "K64 IO"
+Date "2019-01-02"
+Rev "1"
+Comp "Wazombi Labs OÜ"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR02
+U 1 1 55BCD6FE
+P 950 950
+F 0 "#PWR02" H 950 700 50  0001 C CNN
+F 1 "GND" V 950 750 50  0000 C CNN
+F 2 "" H 950 950 60  0000 C CNN
+F 3 "" H 950 950 60  0000 C CNN
+	1    950  950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3.3V-RESCUE-k64-io-pcb #PWR01
+U 1 1 55BCD7D8
+P 950 850
+F 0 "#PWR01" H 950 700 50  0001 C CNN
+F 1 "+3.3V" V 950 1100 50  0000 C CNN
+F 2 "" H 950 850 60  0000 C CNN
+F 3 "" H 950 850 60  0000 C CNN
+	1    950  850 
+	0    1    1    0   
+$EndComp
+$Sheet
+S 5250 750  850  1500
+U 55B8EDEB
+F0 "ethernet" 60
+F1 "ethernet.sch" 60
+F2 "RMII_RXER" I L 5250 1550 60 
+F3 "RMII_RXD0" B L 5250 1350 60 
+F4 "RMII_RXD1" B L 5250 1450 60 
+F5 "RMII_TXEN" I L 5250 1150 60 
+F6 "RMII_TXD0" B L 5250 1050 60 
+F7 "RMII_TXD1" B L 5250 950 60 
+F8 "RMII_MDIO" I L 5250 1650 60 
+F9 "RMII_MDC" I L 5250 1750 60 
+F10 "ETH_PHY_RST" I L 5250 1950 60 
+F11 "RMII_CRS_DV" I L 5250 1250 60 
+F12 "RMII_RXCLK" B L 5250 850 60 
+F13 "LINK_LED" I L 5250 1850 60 
+F14 "SCL" B L 5250 2050 60 
+F15 "SDA" B L 5250 2150 60 
+$EndSheet
+$Comp
+L k64-io-pcb-rescue:PWR_FLAG-RESCUE-k64-io-pcb #FLG01
+U 1 1 56E523E2
+P 9450 900
+F 0 "#FLG01" H 9450 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 1080 50  0000 C CNN
+F 2 "" H 9450 900 50  0000 C CNN
+F 3 "" H 9450 900 50  0000 C CNN
+	1    9450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:PWR_FLAG-RESCUE-k64-io-pcb #FLG02
+U 1 1 56E52775
+P 9850 900
+F 0 "#FLG02" H 9850 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 9850 1080 50  0000 C CNN
+F 2 "" H 9850 900 50  0000 C CNN
+F 3 "" H 9850 900 50  0000 C CNN
+	1    9850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:PWR_FLAG-RESCUE-k64-io-pcb #FLG03
+U 1 1 56E528EF
+P 10250 900
+F 0 "#FLG03" H 10250 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 10250 1080 50  0000 C CNN
+F 2 "" H 10250 900 50  0000 C CNN
+F 3 "" H 10250 900 50  0000 C CNN
+	1    10250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR034
+U 1 1 56E53318
+P 10250 900
+F 0 "#PWR034" H 10250 650 50  0001 C CNN
+F 1 "GND" H 10250 750 50  0000 C CNN
+F 2 "" H 10250 900 60  0000 C CNN
+F 3 "" H 10250 900 60  0000 C CNN
+	1    10250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3.3V-RESCUE-k64-io-pcb #PWR032
+U 1 1 56E55960
+P 9850 900
+F 0 "#PWR032" H 9850 750 50  0001 C CNN
+F 1 "+3.3V" H 9850 1050 50  0000 C CNN
+F 2 "" H 9850 900 60  0000 C CNN
+F 3 "" H 9850 900 60  0000 C CNN
+	1    9850 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X05-RESCUE-k64-io-pcb P1
+U 1 1 5722A053
+P 750 850
+F 0 "P1" H 700 1150 50  0000 L CNN
+F 1 "SWD HEADER" V 850 600 50  0000 L CNN
+F 2 "wazombi:1X05-1.27MM" H 828 800 50  0001 L CNN
+F 3 "" H 750 850 50  0000 C CNN
+	1    750  850 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR031
+U 1 1 57D7846E
+P 9450 900
+F 0 "#PWR031" H 9450 750 50  0001 C CNN
+F 1 "+12V" H 9450 1040 50  0000 C CNN
+F 2 "" H 9450 900 50  0000 C CNN
+F 3 "" H 9450 900 50  0000 C CNN
+	1    9450 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P4
+U 1 1 57D7CD59
+P 750 1300
+F 0 "P4" H 750 1450 50  0000 C CNN
+F 1 "RS-485" V 850 1300 50  0000 C CNN
+F 2 "wazombi:Phoenix_SMKDS_2pin" H 750 1300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/324/ItemDetail_1728284-916650.pdf" H 750 1300 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Phoenix-Contact/1728284/?qs=%2fbRkJSLTVS8E8WZJTyDrWg%3d%3d" H 750 1300 60  0001 C CNN "Source"
+	1    750  1300
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 1400 1150 850  400 
+U 56D54DB0
+F0 "RS-485" 60
+F1 "RS-485.sch" 60
+F2 "A" I L 1400 1250 60 
+F3 "B" I L 1400 1350 60 
+F4 "DENABLE" I R 2250 1250 60 
+F5 "RO" O R 2250 1350 60 
+F6 "DI" I R 2250 1450 60 
+$EndSheet
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P9
+U 1 1 57D82111
+P 750 4050
+F 0 "P9" H 750 4200 50  0000 C CNN
+F 1 "I2C HEADER" V 850 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 750 4050 50  0001 C CNN
+F 3 "" H 750 4050 50  0000 C CNN
+	1    750  4050
+	-1   0    0    -1  
+$EndComp
+Text Label 950  4000 0    60   ~ 0
+SDA
+Text Label 950  4100 0    60   ~ 0
+SCL
+$Comp
+L k64-io-pcb-rescue:CONN_01X06-RESCUE-k64-io-pcb P8
+U 1 1 57D8497E
+P 750 3450
+F 0 "P8" H 750 3800 50  0000 C CNN
+F 1 "SPI HEADER" V 850 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 750 3450 50  0001 C CNN
+F 3 "" H 750 3450 50  0000 C CNN
+	1    750  3450
+	-1   0    0    -1  
+$EndComp
+Text Notes 6100 2250 2    31   ~ 0
+RJ45 CONNECTOR INSIDE
+$Comp
+L k64-io-pcb-rescue:CP_Small-RESCUE-k64-io-pcb C1
+U 1 1 57D8241C
+P 8350 2300
+F 0 "C1" H 8360 2370 50  0000 L CNN
+F 1 "100u/50V" V 8250 2100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 8350 2300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/231/lelon_REA[1]-341020.pdf" H 8350 2300 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Lelon/REA101M1HBK-0811P/?qs=sGAEpiMZZMsh%252b1woXyUXjz8pyGOK%2fuWwNk%252bsNEv6tLE%3d" H 8350 2300 60  0001 C CNN "Source"
+	1    8350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR030
+U 1 1 57D829C9
+P 9300 2550
+F 0 "#PWR030" H 9300 2300 50  0001 C CNN
+F 1 "GND" H 9300 2400 50  0000 C CNN
+F 2 "" H 9300 2550 60  0000 C CNN
+F 3 "" H 9300 2550 60  0000 C CNN
+	1    9300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR027
+U 1 1 57D83815
+P 8350 2000
+F 0 "#PWR027" H 8350 1850 50  0001 C CNN
+F 1 "+12V" H 8350 2140 50  0000 C CNN
+F 2 "" H 8350 2000 50  0000 C CNN
+F 3 "" H 8350 2000 50  0000 C CNN
+	1    8350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C6
+U 1 1 57D98540
+P 9800 2300
+F 0 "C6" H 9800 2200 50  0000 L CNN
+F 1 "1u" H 9850 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9800 2300 50  0001 C CNN
+F 3 "" H 9800 2300 50  0000 C CNN
+	1    9800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P5
+U 1 1 57D940F1
+P 6650 2150
+F 0 "P5" H 6750 2150 50  0000 C CNN
+F 1 "EXT SUPPLY OUTPUT" V 6850 2150 50  0000 C CNN
+F 2 "wazombi:JST_VH_3.96mm_2pin" H 6650 2150 50  0001 C CNN
+F 3 "" H 6650 2150 50  0000 C CNN
+	1    6650 2150
+	-1   0    0    -1  
+$EndComp
+Text Label 5250 2150 2    59   ~ 0
+SDA
+Text Label 5250 2050 2    59   ~ 0
+SCL
+$Sheet
+S 1850 2000 650  500 
+U 55B8757E
+F0 "inputs" 60
+F1 "inputs.sch" 60
+F2 "OUT1" O R 2500 2100 60 
+F3 "IN1" I L 1850 2100 60 
+F4 "OUT2" O R 2500 2200 60 
+F5 "IN2" I L 1850 2200 60 
+F6 "OUT3" O R 2500 2300 60 
+F7 "IN3" I L 1850 2300 60 
+F8 "OUT4" O R 2500 2400 60 
+F9 "IN4" I L 1850 2400 60 
+$EndSheet
+Text Notes 10700 700  0    79   ~ 16
+POWER
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P6
+U 1 1 57FA45B3
+P 7500 2500
+F 0 "P6" H 7600 2500 50  0000 C CNN
+F 1 "RESERVE POWER OUTPUT" H 7200 2350 50  0000 C CNN
+F 2 "wazombi:Phoenix_SMKDS_2pin" H 7500 2500 50  0001 C CNN
+F 3 "" H 7500 2500 50  0000 C CNN
+	1    7500 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:D_Schottky_Small-RESCUE-k64-io-pcb D2
+U 1 1 57FA9F7F
+P 7900 2450
+F 0 "D2" H 7850 2530 50  0000 L CNN
+F 1 "D_Schottky_Small" H 7620 2370 50  0001 L CNN
+F 2 "Diodes_SMD:SMC_Standard" V 7900 2450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/115/ds30923-81396.pdf" V 7900 2450 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/Diodes-Incorporated/B340-13-F/?qs=sGAEpiMZZMtQ8nqTKtFS%2fNfepCxBebO8bEC4msRtWa4%3d" H 7900 2450 60  0001 C CNN "Source"
+	1    7900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R9
+U 1 1 57FCC9C9
+P 6650 6950
+F 0 "R9" H 6680 6970 50  0000 L CNN
+F 1 "100k" H 6680 6910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 6650 6950 50  0001 C CNN
+F 3 "" H 6650 6950 50  0000 C CNN
+	1    6650 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R10
+U 1 1 57FCCCD3
+P 6650 7250
+F 0 "R10" H 6680 7270 50  0000 L CNN
+F 1 "10k" H 6680 7210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 6650 7250 50  0001 C CNN
+F 3 "" H 6650 7250 50  0000 C CNN
+	1    6650 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR017
+U 1 1 57FCD9ED
+P 6650 7350
+F 0 "#PWR017" H 6650 7100 50  0001 C CNN
+F 1 "GND" H 6650 7200 50  0000 C CNN
+F 2 "" H 6650 7350 50  0000 C CNN
+F 3 "" H 6650 7350 50  0000 C CNN
+	1    6650 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR016
+U 1 1 57FCE5AE
+P 6650 6850
+F 0 "#PWR016" H 6650 6700 50  0001 C CNN
+F 1 "+12V" H 6650 6990 50  0000 C CNN
+F 2 "" H 6650 6850 50  0000 C CNN
+F 3 "" H 6650 6850 50  0000 C CNN
+	1    6650 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:opamp-RESCUE-k64-io-pcb U3
+U 1 1 57FD06C9
+P 6050 7200
+F 0 "U3" H 6250 7300 60  0000 C CNN
+F 1 "opamp" H 6300 7100 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6000 7900 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/268/MCP6051_DS22182B-60940.pdf" H 6000 8000 60  0001 C CNN
+F 4 "0.443 € @ 100 pcs" H 6050 7600 60  0001 C CNN "Price"
+F 5 "http://www.mouser.ee/ProductDetail/Microchip-Technology/MCP6051T-E-OT/?qs=sGAEpiMZZMvtNjJQt4UgLYWm7pQSYaaNePIooOYdSvw%3d" H 6000 7700 60  0001 C CNN "Source"
+F 6 "Most 5 pin opamps should fit this" H 6050 7800 60  0001 C CNN "Notes"
+	1    6050 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR014
+U 1 1 57FD16D2
+P 6000 7500
+F 0 "#PWR014" H 6000 7250 50  0001 C CNN
+F 1 "GND" H 6000 7350 50  0000 C CNN
+F 2 "" H 6000 7500 50  0000 C CNN
+F 3 "" H 6000 7500 50  0000 C CNN
+	1    6000 7500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR013
+U 1 1 57FD1B11
+P 6000 6800
+F 0 "#PWR013" H 6000 6650 50  0001 C CNN
+F 1 "+3V3" H 6000 6940 50  0000 C CNN
+F 2 "" H 6000 6800 50  0000 C CNN
+F 3 "" H 6000 6800 50  0000 C CNN
+	1    6000 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:D_Schottky_Small-RESCUE-k64-io-pcb D5
+U 1 1 57FD4267
+P 6250 6850
+F 0 "D5" H 6200 6930 50  0000 L CNN
+F 1 "Low I(rev)" H 6050 6750 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-323" V 6250 6850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/308/NSR0530H-D-775571.pdf" V 6250 6850 50  0001 C CNN
+F 4 "http://www.mouser.ee/ProductDetail/ON-Semiconductor/NSR0530HT1G/?qs=sGAEpiMZZMtQ8nqTKtFS%2fEVeKkplFsDyeCdC2RpJga0T578BCisSbw%3d%3d" H 6250 6850 60  0001 C CNN "Source"
+	1    6250 6850
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 6550 0    79   ~ 16
+Supply Voltage Monitor
+Text Notes 7850 2350 0    60   ~ 0
+3A
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P26
+U 1 1 57FEE9D8
+P 10500 1900
+F 0 "P26" H 10578 1941 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1850 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1900 50  0001 C CNN
+F 3 "" H 10500 1900 50  0000 C CNN
+F 4 "?" H 10500 1900 60  0001 C CNN "Price"
+F 5 "?" H 10500 1900 60  0001 C CNN "Source"
+F 6 "?" H 10500 1900 60  0001 C CNN "Notes"
+	1    10500 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P19
+U 1 1 57FFC2E2
+P 10500 850
+F 0 "P19" H 10578 891 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 800 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 850 50  0001 C CNN
+F 3 "" H 10500 850 50  0000 C CNN
+F 4 "?" H 10500 850 60  0001 C CNN "Price"
+F 5 "?" H 10500 850 60  0001 C CNN "Source"
+F 6 "?" H 10500 850 60  0001 C CNN "Notes"
+	1    10500 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P20
+U 1 1 57FFC90A
+P 10500 1000
+F 0 "P20" H 10578 1041 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 950 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1000 50  0001 C CNN
+F 3 "" H 10500 1000 50  0000 C CNN
+F 4 "?" H 10500 1000 60  0001 C CNN "Price"
+F 5 "?" H 10500 1000 60  0001 C CNN "Source"
+F 6 "?" H 10500 1000 60  0001 C CNN "Notes"
+	1    10500 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P21
+U 1 1 57FFCC3C
+P 10500 1150
+F 0 "P21" H 10578 1191 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1100 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1150 50  0001 C CNN
+F 3 "" H 10500 1150 50  0000 C CNN
+F 4 "?" H 10500 1150 60  0001 C CNN "Price"
+F 5 "?" H 10500 1150 60  0001 C CNN "Source"
+F 6 "?" H 10500 1150 60  0001 C CNN "Notes"
+	1    10500 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P22
+U 1 1 57FFCF6E
+P 10500 1300
+F 0 "P22" H 10578 1341 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1250 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1300 50  0001 C CNN
+F 3 "" H 10500 1300 50  0000 C CNN
+F 4 "?" H 10500 1300 60  0001 C CNN "Price"
+F 5 "?" H 10500 1300 60  0001 C CNN "Source"
+F 6 "?" H 10500 1300 60  0001 C CNN "Notes"
+	1    10500 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P23
+U 1 1 57FFD2A0
+P 10500 1450
+F 0 "P23" H 10578 1491 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1400 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1450 50  0001 C CNN
+F 3 "" H 10500 1450 50  0000 C CNN
+F 4 "?" H 10500 1450 60  0001 C CNN "Price"
+F 5 "?" H 10500 1450 60  0001 C CNN "Source"
+F 6 "?" H 10500 1450 60  0001 C CNN "Notes"
+	1    10500 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P24
+U 1 1 57FFD5D2
+P 10500 1600
+F 0 "P24" H 10578 1641 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1550 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1600 50  0001 C CNN
+F 3 "" H 10500 1600 50  0000 C CNN
+F 4 "?" H 10500 1600 60  0001 C CNN "Price"
+F 5 "?" H 10500 1600 60  0001 C CNN "Source"
+F 6 "?" H 10500 1600 60  0001 C CNN "Notes"
+	1    10500 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X01-RESCUE-k64-io-pcb P25
+U 1 1 57FFD904
+P 10500 1750
+F 0 "P25" H 10578 1791 50  0001 L CNN
+F 1 "CONN_01X01" H 10578 1700 50  0001 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10500 1750 50  0001 C CNN
+F 3 "" H 10500 1750 50  0000 C CNN
+F 4 "?" H 10500 1750 60  0001 C CNN "Price"
+F 5 "?" H 10500 1750 60  0001 C CNN "Source"
+F 6 "?" H 10500 1750 60  0001 C CNN "Notes"
+	1    10500 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:Earth_Protective-RESCUE-k64-io-pcb #PWR035
+U 1 1 59692BC8
+P 10800 1900
+F 0 "#PWR035" H 11050 1650 50  0001 C CNN
+F 1 "Earth_Protective" H 11250 1750 50  0001 C CNN
+F 2 "" H 10800 1800 50  0001 C CNN
+F 3 "" H 10800 1800 50  0001 C CNN
+	1    10800 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR028
+U 1 1 5969421E
+P 6550 950
+F 0 "#PWR028" H 6550 700 50  0001 C CNN
+F 1 "GND" H 6650 850 50  0000 C CNN
+F 2 "" H 6550 950 60  0000 C CNN
+F 3 "" H 6550 950 60  0000 C CNN
+	1    6550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:Earth_Protective-RESCUE-k64-io-pcb #PWR029
+U 1 1 59694537
+P 7000 950
+F 0 "#PWR029" H 7250 700 50  0001 C CNN
+F 1 "Earth_Protective" H 7450 800 50  0001 C CNN
+F 2 "" H 7000 850 50  0001 C CNN
+F 3 "" H 7000 850 50  0001 C CNN
+	1    7000 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R78
+U 1 1 5969506D
+P 6700 900
+F 0 "R78" V 6750 1000 50  0000 L CNN
+F 1 "DNP" V 6650 1000 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 6700 900 50  0001 C CNN
+F 3 "" H 6700 900 50  0000 C CNN
+	1    6700 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:R-78E-1.0-RESCUE-k64-io-pcb U1
+U 1 1 59710775
+P 9300 2100
+F 0 "U1" H 9300 2387 60  0000 C CNN
+F 1 "R-78E-1.0" H 9300 2281 60  0000 C CNN
+F 2 "wazombi:R-78E-1.0" H 9300 2100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/468/R-78Exx-1.0-958279.pdf" H 9300 1250 60  0001 C CNN
+F 4 "2.93€ @ 100pcs" H 9300 1500 60  0001 C CNN "Price"
+F 5 "?" H 9300 1300 60  0001 C CNN "Notes"
+F 6 "http://www.mouser.ee/ProductDetail/RECOM-Power/R-78E33-10/?qs=sGAEpiMZZMsc0tfZmXiUnbaEjpYStdRIFUgifFXFkklVvzJFhjySMg%3d%3d" H 9300 1400 60  0001 C CNN "Source"
+	1    9300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R77
+U 1 1 596968E8
+P 6700 700
+F 0 "R77" V 6750 800 50  0000 L CNN
+F 1 "DNP" V 6650 800 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 6700 700 50  0001 C CNN
+F 3 "" H 6700 700 50  0000 C CNN
+	1    6700 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3.3V-RESCUE-k64-io-pcb #PWR033
+U 1 1 5971F5B8
+P 9850 2100
+F 0 "#PWR033" H 9850 1950 50  0001 C CNN
+F 1 "+3.3V" H 9850 2250 50  0000 C CNN
+F 2 "" H 9850 2100 60  0000 C CNN
+F 3 "" H 9850 2100 60  0000 C CNN
+	1    9850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:COMMON-MODE-FILTER-RESCUE-k64-io-pcb L10
+U 1 1 59728188
+P 7250 2150
+F 0 "L10" H 7250 1909 60  0000 C CNN
+F 1 "COMMON-MODE-FILTER" H 7250 2356 60  0001 C CNN
+F 2 "wazombi:DR331" H 7250 2356 60  0001 C CNN
+F 3 "" H 7250 2150 60  0000 C CNN
+F 4 "?" H 7250 2150 60  0001 C CNN "Price"
+F 5 "?" H 7250 2150 60  0001 C CNN "Source"
+F 6 "?" H 7250 2150 60  0001 C CNN "Notes"
+	1    7250 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:L_Small-RESCUE-k64-io-pcb L11
+U 1 1 5972FE23
+P 8650 2100
+F 0 "L11" V 8835 2100 50  0000 C CNN
+F 1 "33uH" V 8744 2100 50  0000 C CNN
+F 2 "wazombi:ASPI-0315FS" H 8650 2100 50  0001 C CNN
+F 3 "" H 8650 2100 50  0001 C CNN
+	1    8650 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C34
+U 1 1 59731D54
+P 8550 2250
+F 0 "C34" V 8600 2400 50  0000 L CNN
+F 1 "10u" V 8450 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0000 C CNN
+	1    8550 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C35
+U 1 1 59732C90
+P 8750 2250
+F 0 "C35" V 8800 2400 50  0000 L CNN
+F 1 "10u" V 8650 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 8750 2250 50  0001 C CNN
+F 3 "" H 8750 2250 50  0000 C CNN
+	1    8750 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C37
+U 1 1 59738BA9
+P 6850 2400
+F 0 "C37" V 6950 2400 50  0000 L CNN
+F 1 "10u" V 6750 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 6850 2400 50  0001 C CNN
+F 3 "" H 6850 2400 50  0000 C CNN
+	1    6850 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C36
+U 1 1 5973A655
+P 6850 1900
+F 0 "C36" V 6950 1900 50  0000 L CNN
+F 1 "10u" V 6750 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 6850 1900 50  0001 C CNN
+F 3 "" H 6850 1900 50  0000 C CNN
+	1    6850 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:Earth_Protective-RESCUE-k64-io-pcb #PWR019
+U 1 1 5973CB97
+P 6850 1800
+F 0 "#PWR019" H 7100 1550 50  0001 C CNN
+F 1 "Earth_Protective" H 7300 1650 50  0001 C CNN
+F 2 "" H 6850 1700 50  0001 C CNN
+F 3 "" H 6850 1700 50  0001 C CNN
+	1    6850 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:Earth_Protective-RESCUE-k64-io-pcb #PWR020
+U 1 1 5973D17A
+P 6850 2500
+F 0 "#PWR020" H 7100 2250 50  0001 C CNN
+F 1 "Earth_Protective" H 7300 2350 50  0001 C CNN
+F 2 "" H 6850 2400 50  0001 C CNN
+F 3 "" H 6850 2400 50  0001 C CNN
+	1    6850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P13
+U 1 1 598E3AD1
+P 7750 1800
+F 0 "P13" H 7750 1950 50  0000 C CNN
+F 1 "DBG HEADER" V 7850 1800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7750 1800 50  0001 C CNN
+F 3 "" H 7750 1800 50  0000 C CNN
+	1    7750 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR025
+U 1 1 598E8BB5
+P 7950 1750
+F 0 "#PWR025" H 7950 1600 50  0001 C CNN
+F 1 "+12V" V 7950 1950 50  0000 C CNN
+F 2 "" H 7950 1750 50  0000 C CNN
+F 3 "" H 7950 1750 50  0000 C CNN
+	1    7950 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR026
+U 1 1 598E9031
+P 7950 1850
+F 0 "#PWR026" H 7950 1600 50  0001 C CNN
+F 1 "GND" V 7950 1650 50  0000 C CNN
+F 2 "" H 7950 1850 60  0000 C CNN
+F 3 "" H 7950 1850 60  0000 C CNN
+	1    7950 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P12
+U 1 1 598EAC2E
+P 7750 1300
+F 0 "P12" H 7750 1450 50  0000 C CNN
+F 1 "DBG HEADER" V 7850 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7750 1300 50  0001 C CNN
+F 3 "" H 7750 1300 50  0000 C CNN
+	1    7750 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3.3V-RESCUE-k64-io-pcb #PWR023
+U 1 1 598EAF8A
+P 7950 1250
+F 0 "#PWR023" H 7950 1100 50  0001 C CNN
+F 1 "+3.3V" V 7950 1500 50  0000 C CNN
+F 2 "" H 7950 1250 60  0000 C CNN
+F 3 "" H 7950 1250 60  0000 C CNN
+	1    7950 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR024
+U 1 1 598EB740
+P 7950 1350
+F 0 "#PWR024" H 7950 1100 50  0001 C CNN
+F 1 "GND" V 7950 1150 50  0000 C CNN
+F 2 "" H 7950 1350 60  0000 C CNN
+F 3 "" H 7950 1350 60  0000 C CNN
+	1    7950 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  3500 2750 3500
+Wire Wire Line
+	5050 1950 5250 1950
+Wire Wire Line
+	5050 1850 5250 1850
+Wire Wire Line
+	5050 1750 5250 1750
+Wire Wire Line
+	5050 1650 5250 1650
+Wire Wire Line
+	5050 1550 5250 1550
+Wire Wire Line
+	5050 1450 5250 1450
+Wire Wire Line
+	5050 1350 5250 1350
+Wire Wire Line
+	5050 1250 5250 1250
+Wire Wire Line
+	5050 1150 5250 1150
+Wire Wire Line
+	5050 1050 5250 1050
+Wire Wire Line
+	5050 950  5250 950 
+Wire Notes Line
+	11150 3250 11150 550 
+Wire Notes Line
+	6400 3250 11150 3250
+Wire Wire Line
+	7800 2450 7700 2450
+Wire Wire Line
+	7650 2200 7750 2200
+Connection ~ 7750 2550
+Connection ~ 8000 2100
+Wire Wire Line
+	8000 2450 8000 2100
+Wire Notes Line
+	11150 550  6400 550 
+Wire Notes Line
+	6400 550  6400 3250
+Wire Wire Line
+	2750 3400 950  3400
+Wire Wire Line
+	950  3300 2750 3300
+Wire Wire Line
+	950  3200 2750 3200
+Wire Wire Line
+	2750 1350 2250 1350
+Wire Wire Line
+	2250 1250 2750 1250
+Wire Wire Line
+	2250 1450 2750 1450
+Wire Wire Line
+	1450 850  1450 1050
+Wire Wire Line
+	2750 850  1450 850 
+Wire Wire Line
+	950  750  2750 750 
+Wire Wire Line
+	950  650  2750 650 
+Connection ~ 8350 2550
+Wire Wire Line
+	7750 2200 7750 2550
+Connection ~ 8350 2100
+Wire Wire Line
+	8350 2550 8350 2400
+Wire Wire Line
+	950  1350 1400 1350
+Wire Wire Line
+	950  1250 1400 1250
+Wire Wire Line
+	1450 1050 950  1050
+Wire Wire Line
+	5050 850  5250 850 
+Wire Wire Line
+	950  3600 2750 3600
+Wire Wire Line
+	950  3700 2750 3700
+Wire Wire Line
+	950  4000 2750 4000
+Wire Wire Line
+	950  4100 2750 4100
+Wire Wire Line
+	6350 7100 6550 7100
+Wire Wire Line
+	6650 7050 6650 7100
+Connection ~ 6650 7100
+Wire Wire Line
+	6350 7300 6450 7300
+Wire Wire Line
+	6450 7300 6450 6600
+Wire Wire Line
+	6450 6600 5550 6600
+Wire Wire Line
+	5550 6600 5550 7200
+Wire Wire Line
+	5050 7200 5550 7200
+Connection ~ 5550 7200
+Wire Wire Line
+	6000 6800 6000 6850
+Wire Wire Line
+	6350 6850 6550 6850
+Wire Wire Line
+	6550 6850 6550 7100
+Connection ~ 6550 7100
+Wire Wire Line
+	6150 6850 6000 6850
+Connection ~ 6000 6850
+Wire Wire Line
+	2750 2100 2500 2100
+Wire Wire Line
+	2500 2200 2750 2200
+Wire Wire Line
+	2750 2300 2500 2300
+Wire Wire Line
+	2500 2400 2750 2400
+Wire Wire Line
+	10700 850  10750 850 
+Wire Wire Line
+	10750 850  10750 1000
+Wire Wire Line
+	10700 1900 10750 1900
+Connection ~ 10750 1900
+Wire Wire Line
+	10700 1750 10750 1750
+Connection ~ 10750 1750
+Wire Wire Line
+	10700 1600 10750 1600
+Connection ~ 10750 1600
+Wire Wire Line
+	10700 1450 10750 1450
+Connection ~ 10750 1450
+Wire Wire Line
+	10700 1300 10750 1300
+Connection ~ 10750 1300
+Wire Wire Line
+	10700 1150 10750 1150
+Connection ~ 10750 1150
+Wire Wire Line
+	10700 1000 10750 1000
+Connection ~ 10750 1000
+Wire Wire Line
+	6550 700  6550 900 
+Wire Wire Line
+	6550 900  6600 900 
+Wire Wire Line
+	6800 900  7000 900 
+Wire Wire Line
+	7000 700  7000 900 
+Wire Wire Line
+	6550 700  6600 700 
+Connection ~ 6550 900 
+Wire Wire Line
+	6800 700  7000 700 
+Connection ~ 7000 900 
+Wire Wire Line
+	7650 2100 8000 2100
+Wire Wire Line
+	7700 2550 7750 2550
+Wire Wire Line
+	9300 2550 9300 2450
+Connection ~ 9300 2550
+Wire Wire Line
+	9750 2100 9800 2100
+Wire Wire Line
+	9800 2100 9800 2200
+Wire Wire Line
+	9800 2550 9800 2400
+Connection ~ 9800 2100
+Wire Wire Line
+	8350 2000 8350 2100
+Wire Wire Line
+	7650 2050 7650 2100
+Wire Wire Line
+	7650 2250 7650 2200
+Wire Wire Line
+	8550 2100 8550 2150
+Wire Wire Line
+	8750 2100 8750 2150
+Wire Wire Line
+	8750 2100 8850 2100
+Wire Wire Line
+	8550 2350 8550 2550
+Connection ~ 8550 2550
+Wire Wire Line
+	8750 2350 8750 2550
+Connection ~ 8750 2550
+$Comp
+L k64-io-pcb-rescue:CONN_01X06-RESCUE-k64-io-pcb P14
+U 1 1 599E23C9
+P 5800 2750
+F 0 "P14" H 5800 3100 50  0000 C CNN
+F 1 "Debug serial" V 5900 2750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5800 2750 50  0001 C CNN
+F 3 "" H 5800 2750 50  0000 C CNN
+	1    5800 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2500 5600 2500
+Wire Wire Line
+	5050 2600 5600 2600
+Wire Wire Line
+	5050 2700 5600 2700
+Wire Wire Line
+	5050 2800 5600 2800
+Wire Wire Line
+	5050 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 2900
+Wire Wire Line
+	5150 2900 5600 2900
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR012
+U 1 1 599E53E5
+P 5600 3000
+F 0 "#PWR012" H 5600 2750 50  0001 C CNN
+F 1 "GND" V 5600 2800 50  0000 C CNN
+F 2 "" H 5600 3000 50  0000 C CNN
+F 3 "" H 5600 3000 50  0000 C CNN
+	1    5600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 2550 8350 2550
+Wire Wire Line
+	8000 2100 8350 2100
+Wire Wire Line
+	8350 2550 8550 2550
+Wire Wire Line
+	8350 2100 8350 2200
+Wire Wire Line
+	8350 2100 8550 2100
+Wire Wire Line
+	6650 7100 6650 7150
+Wire Wire Line
+	5550 7200 5650 7200
+Wire Wire Line
+	6550 7100 6650 7100
+Wire Wire Line
+	6000 6850 6000 6900
+Wire Wire Line
+	10750 1900 10800 1900
+Wire Wire Line
+	10750 1750 10750 1900
+Wire Wire Line
+	10750 1600 10750 1750
+Wire Wire Line
+	10750 1450 10750 1600
+Wire Wire Line
+	10750 1300 10750 1450
+Wire Wire Line
+	10750 1150 10750 1300
+Wire Wire Line
+	10750 1000 10750 1150
+Wire Wire Line
+	6550 900  6550 950 
+Wire Wire Line
+	7000 900  7000 950 
+Wire Wire Line
+	9300 2550 9800 2550
+Wire Wire Line
+	9800 2100 9850 2100
+Wire Wire Line
+	8550 2550 8750 2550
+Wire Wire Line
+	8750 2550 9300 2550
+Wire Wire Line
+	6850 2000 6850 2100
+Wire Wire Line
+	6850 2200 6850 2300
+$Sheet
+S 2750 550  2300 7050
+U 56C736AE
+F0 "MCU" 60
+F1 "mcu.sch" 60
+F2 "~MCU_RESET" I L 2750 850 60 
+F3 "RMII_RXCLK" B R 5050 850 60 
+F4 "RMII_TXD1" B R 5050 950 60 
+F5 "RMII_TXD0" B R 5050 1050 60 
+F6 "RMII_TXEN" O R 5050 1150 60 
+F7 "RMII_CRS_DV" I R 5050 1250 60 
+F8 "RMII_RXER" O R 5050 1550 60 
+F9 "SWDIO" B L 2750 650 60 
+F10 "SWDCLK" B L 2750 750 60 
+F11 "RMII_MDIO" I R 5050 1650 60 
+F12 "RMII_MDC" I R 5050 1750 60 
+F13 "SCL" B L 2750 4100 60 
+F14 "SDA" B L 2750 4000 60 
+F15 "LINK_LED" O R 5050 1850 60 
+F16 "ETH_PHY_RST" O R 5050 1950 60 
+F17 "RMII_RXD0" I R 5050 1350 60 
+F18 "RMII_RXD1" I R 5050 1450 60 
+F19 "DENABLE" O L 2750 1250 60 
+F20 "UART1_TX" O R 5050 2600 60 
+F21 "UART1_RX" I R 5050 2500 60 
+F22 "MISO" I L 2750 3200 60 
+F23 "MOSI" O L 2750 3300 60 
+F24 "SCK" B L 2750 3400 60 
+F25 "UART1_CTS" B R 5050 2700 60 
+F26 "UART1_RTS" B R 5050 2800 60 
+F27 "UART3_TX" O L 2750 1450 60 
+F28 "UART3_RX" I L 2750 1350 60 
+F29 "PWM_FTM0_CH1" O R 5050 3450 60 
+F30 "PWM_FTM0_CH2" O R 5050 3550 60 
+F31 "PWM_FTM0_CH7" O L 2750 6700 60 
+F32 "SPI0_PCS0" O L 2750 3500 60 
+F33 "SPI0_PCS1" O L 2750 3600 60 
+F34 "SPI0_PCS2" O L 2750 3700 60 
+F35 "V_SUPPLY_ADC" I R 5050 7200 60 
+F36 "BUZZER" O R 5050 6350 60 
+F37 "3G_ON" O R 5050 3100 60 
+F38 "UART4_TX" O R 5050 3950 60 
+F39 "UART4_RX" I R 5050 4050 60 
+F40 "IO1" I L 2750 2100 60 
+F41 "IO2" I L 2750 2200 60 
+F42 "IO3" I L 2750 2300 60 
+F43 "IO4" I L 2750 2400 60 
+F44 "CAN_TX" O L 2750 4700 60 
+F45 "CAN_RX" I L 2750 4400 60 
+F46 "CAN_STBY" O L 2750 4800 60 
+$EndSheet
+$Comp
+L wazombi:CAN_transceiver U7
+U 1 1 5C2E2EEC
+P 1800 4550
+F 0 "U7" H 1800 4163 60  0000 C CNN
+F 1 "CAN_transceiver" H 1800 4269 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1700 4100 60  0001 C CNN
+F 3 "https://www.mouser.ee/datasheet/2/268/ATA6560-ATA6561-High-Speed-CAN-Transceiver-DS20005-1384933.pdf" H 1800 4200 60  0001 C CNN
+F 4 "0.386€ @ 100pcs" H 1800 4000 60  0001 C CNN "Price"
+F 5 "6560 has NSIL pin, 6561 has VIO pin" H 1800 3850 60  0001 C CNN "Notes"
+F 6 "https://www.mouser.ee/ProductDetail/Microchip-Technology-Atmel/ATA6560-GAQW-N" H 1800 3900 60  0001 C CNN "Source"
+	1    1800 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4400 2300 4400
+Wire Wire Line
+	2300 4700 2750 4700
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR03
+U 1 1 5C30127F
+P 1300 4400
+F 0 "#PWR03" H 1300 4250 50  0001 C CNN
+F 1 "+3V3" H 1300 4550 50  0000 C CNN
+F 2 "" H 1300 4400 50  0000 C CNN
+F 3 "" H 1300 4400 50  0000 C CNN
+	1    1300 4400
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5C3077AB
+P 9050 900
+F 0 "#PWR04" H 9050 750 50  0001 C CNN
+F 1 "+5V" H 9065 1073 50  0000 C CNN
+F 2 "" H 9050 900 50  0001 C CNN
+F 3 "" H 9050 900 50  0001 C CNN
+	1    9050 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:PWR_FLAG-RESCUE-k64-io-pcb #FLG04
+U 1 1 5C30CD07
+P 9050 900
+F 0 "#FLG04" H 9050 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 9050 1080 50  0000 C CNN
+F 2 "" H 9050 900 50  0000 C CNN
+F 3 "" H 9050 900 50  0000 C CNN
+	1    9050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P2
+U 1 1 5C30CE1F
+P 7750 800
+F 0 "P2" H 7750 950 50  0000 C CNN
+F 1 "DBG HEADER" V 7850 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7750 800 50  0001 C CNN
+F 3 "" H 7750 800 50  0000 C CNN
+	1    7750 800 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5C30CE8D
+P 7950 750
+F 0 "#PWR05" H 7950 600 50  0001 C CNN
+F 1 "+5V" V 7965 878 50  0000 L CNN
+F 2 "" H 7950 750 50  0001 C CNN
+F 3 "" H 7950 750 50  0001 C CNN
+	1    7950 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR06
+U 1 1 5C30CF56
+P 7950 850
+F 0 "#PWR06" H 7950 600 50  0001 C CNN
+F 1 "GND" V 7950 650 50  0000 C CNN
+F 2 "" H 7950 850 60  0000 C CNN
+F 3 "" H 7950 850 60  0000 C CNN
+	1    7950 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5C30D06B
+P 2300 4500
+F 0 "#PWR07" H 2300 4350 50  0001 C CNN
+F 1 "+5V" V 2315 4628 50  0000 L CNN
+F 2 "" H 2300 4500 50  0001 C CNN
+F 3 "" H 2300 4500 50  0001 C CNN
+	1    2300 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR010
+U 1 1 5C30D3BA
+P 2300 4600
+F 0 "#PWR010" H 2300 4350 50  0001 C CNN
+F 1 "GND" V 2300 4400 50  0000 C CNN
+F 2 "" H 2300 4600 60  0000 C CNN
+F 3 "" H 2300 4600 60  0000 C CNN
+	1    2300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L wazombi:LM2931 U8
+U 1 1 5C314731
+P 9500 1500
+F 0 "U8" H 9500 1897 60  0000 C CNN
+F 1 "LM2931" H 9500 1791 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9500 1650 60  0001 C CNN
+F 3 "https://www.mouser.ee/datasheet/2/308/LM2931-D-30111.pdf" H 9500 1650 60  0001 C CNN
+F 4 "0.244€ @ 100pcs" H 9500 1500 60  0001 C CNN "Price"
+F 5 "https://www.mouser.ee/ProductDetail/ON-Semiconductor/LM2931AD-50R2G" H 9500 1500 60  0001 C CNN "Source"
+F 6 "?" H 9500 1500 60  0001 C CNN "Notes"
+	1    9500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR011
+U 1 1 5C3147BC
+P 9000 1350
+F 0 "#PWR011" H 9000 1200 50  0001 C CNN
+F 1 "+12V" V 9000 1550 50  0000 C CNN
+F 2 "" H 9000 1350 50  0000 C CNN
+F 3 "" H 9000 1350 50  0000 C CNN
+	1    9000 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5C31483C
+P 10000 1350
+F 0 "#PWR015" H 10000 1200 50  0001 C CNN
+F 1 "+5V" V 10000 1450 50  0000 L CNN
+F 2 "" H 10000 1350 50  0001 C CNN
+F 3 "" H 10000 1350 50  0001 C CNN
+	1    10000 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR018
+U 1 1 5C31490A
+P 9000 1450
+F 0 "#PWR018" H 9000 1200 50  0001 C CNN
+F 1 "GND" V 9000 1250 50  0000 C CNN
+F 2 "" H 9000 1450 60  0000 C CNN
+F 3 "" H 9000 1450 60  0000 C CNN
+	1    9000 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR067
+U 1 1 5C314AD6
+P 9000 1550
+F 0 "#PWR067" H 9000 1300 50  0001 C CNN
+F 1 "GND" V 9000 1350 50  0000 C CNN
+F 2 "" H 9000 1550 60  0000 C CNN
+F 3 "" H 9000 1550 60  0000 C CNN
+	1    9000 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR068
+U 1 1 5C314B2F
+P 10000 1450
+F 0 "#PWR068" H 10000 1200 50  0001 C CNN
+F 1 "GND" V 10000 1250 50  0000 C CNN
+F 2 "" H 10000 1450 60  0000 C CNN
+F 3 "" H 10000 1450 60  0000 C CNN
+	1    10000 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR069
+U 1 1 5C314BD6
+P 10000 1550
+F 0 "#PWR069" H 10000 1300 50  0001 C CNN
+F 1 "GND" V 10000 1350 50  0000 C CNN
+F 2 "" H 10000 1550 60  0000 C CNN
+F 3 "" H 10000 1550 60  0000 C CNN
+	1    10000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C7
+U 1 1 5C3152EE
+P 1800 4950
+F 0 "C7" H 1800 4850 50  0000 L CNN
+F 1 "1u" H 1850 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1800 4950 50  0001 C CNN
+F 3 "" H 1800 4950 50  0000 C CNN
+	1    1800 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR070
+U 1 1 5C315552
+P 1900 4950
+F 0 "#PWR070" H 1900 4800 50  0001 C CNN
+F 1 "+5V" V 1915 5078 50  0000 L CNN
+F 2 "" H 1900 4950 50  0001 C CNN
+F 3 "" H 1900 4950 50  0001 C CNN
+	1    1900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR071
+U 1 1 5C3155AD
+P 1700 4950
+F 0 "#PWR071" H 1700 4700 50  0001 C CNN
+F 1 "GND" V 1700 4750 50  0000 C CNN
+F 2 "" H 1700 4950 60  0000 C CNN
+F 3 "" H 1700 4950 60  0000 C CNN
+	1    1700 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 4800 1250 4800
+Wire Wire Line
+	1250 4800 1250 4700
+Wire Wire Line
+	1250 4700 1300 4700
+$Comp
+L k64-io-pcb-rescue:CONN_01X04-conn J2
+U 1 1 5C321038
+P 750 4550
+F 0 "J2" H 750 4300 50  0000 C CNN
+F 1 "CAN HEADER" V 850 4550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 750 4550 50  0001 C CNN
+F 3 "" H 750 4550 50  0001 C CNN
+	1    750  4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4500 950  4500
+Wire Wire Line
+	1300 4600 950  4600
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR072
+U 1 1 5C32CBD8
+P 950 4700
+F 0 "#PWR072" H 950 4450 50  0001 C CNN
+F 1 "GND" V 950 4500 50  0000 C CNN
+F 2 "" H 950 4700 60  0000 C CNN
+F 3 "" H 950 4700 60  0000 C CNN
+	1    950  4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR073
+U 1 1 5C32CDF8
+P 950 4400
+F 0 "#PWR073" H 950 4250 50  0001 C CNN
+F 1 "+12V" V 850 4450 50  0000 C CNN
+F 2 "" H 950 4400 50  0000 C CNN
+F 3 "" H 950 4400 50  0000 C CNN
+	1    950  4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3450 5850 3450
+Wire Wire Line
+	5850 3550 5050 3550
+Text Label 6600 3550 0    59   ~ 0
+EL2
+Text Label 6600 3450 0    59   ~ 0
+EL1
+$Sheet
+S 5850 3350 750  300 
+U 57F5413F
+F0 "DRV8871 DC Motor Driver" 59
+F1 "DRV8871.sch" 59
+F2 "DC_IN1" I L 5850 3450 60 
+F3 "DC_IN2" I L 5850 3550 60 
+F4 "EL1" O R 6600 3450 60 
+F5 "EL2" O R 6600 3550 60 
+$EndSheet
+$Sheet
+S 5800 3850 900  900 
+U 5C76D63E
+F0 "MBUS" 60
+F1 "MBUS.sch" 60
+F2 "MBus+" B R 6700 4050 60 
+F3 "MBus-" B R 6700 3950 60 
+F4 "TXD" I L 5800 3950 60 
+F5 "RXD" O L 5800 4050 60 
+F6 "MBus_V+" I L 5800 4150 60 
+F7 "MBus_EN" I L 5800 4250 60 
+F8 "MBus_Vout" O R 6700 4650 60 
+$EndSheet
+Wire Wire Line
+	5050 3950 5800 3950
+Wire Wire Line
+	5050 4050 5800 4050
+$Comp
+L wazombi:MAX31865 U10
+U 1 1 5C7C909E
+P 8700 4800
+F 0 "U10" H 8700 5497 60  0000 C CNN
+F 1 "MAX31865" H 8700 5391 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_5x5mm_Pitch0.65mm" H 8700 4000 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31865.pdf" H 8700 3950 60  0001 C CNN
+F 4 "?" H 8700 4150 60  0001 C CNN "Price"
+F 5 "?" H 8700 4100 60  0001 C CNN "Source"
+F 6 "?" H 8700 4050 60  0001 C CNN "Notes"
+	1    8700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:R_Small R37
+U 1 1 5C7C92EF
+P 9350 4500
+F 0 "R37" H 9409 4546 50  0000 L CNN
+F 1 "400R 0.1%" H 9409 4455 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9350 4500 50  0001 C CNN
+F 3 "" H 9350 4500 50  0000 C CNN
+	1    9350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4350 9250 4350
+Wire Wire Line
+	9350 4350 9350 4400
+Wire Wire Line
+	9200 4450 9250 4450
+Wire Wire Line
+	9250 4450 9250 4350
+Connection ~ 9250 4350
+Wire Wire Line
+	9250 4350 9350 4350
+Wire Wire Line
+	9200 4650 9250 4650
+Wire Wire Line
+	9350 4650 9350 4600
+Wire Wire Line
+	9200 4550 9250 4550
+Wire Wire Line
+	9250 4550 9250 4650
+Connection ~ 9250 4650
+Wire Wire Line
+	9250 4650 9350 4650
+Text Notes 9400 4400 0    60   ~ 0
+4 x RTD resistance at 0C
+$Comp
+L k64-io-pcb-rescue:GS3-conn J3
+U 1 1 5C7DC010
+P 9500 4850
+F 0 "J3" H 9500 4617 50  0000 C CNN
+F 1 "GS3" H 9500 4616 50  0001 C CNN
+F 2 "Connectors:GS3" V 9588 4776 50  0001 C CNN
+F 3 "" H 9500 4850 50  0001 C CNN
+	1    9500 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GS2-conn J4
+U 1 1 5C7DC69B
+P 10050 4950
+F 0 "J4" H 10118 4950 50  0000 L CNN
+F 1 "GS2" H 10118 4905 50  0001 L CNN
+F 2 "Connectors:GS2" V 10124 4950 50  0001 C CNN
+F 3 "" H 10050 4950 50  0001 C CNN
+	1    10050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4850 9350 4850
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR081
+U 1 1 5C7E19B9
+P 9650 4950
+F 0 "#PWR081" H 9650 4700 50  0001 C CNN
+F 1 "GND" V 9650 4750 50  0000 C CNN
+F 2 "" H 9650 4950 60  0000 C CNN
+F 3 "" H 9650 4950 60  0000 C CNN
+	1    9650 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 4750 9700 4750
+Wire Wire Line
+	9200 4750 9400 4750
+Wire Wire Line
+	9400 4750 9400 4650
+Wire Wire Line
+	9400 4650 9700 4650
+Wire Wire Line
+	9700 4650 9700 4750
+Connection ~ 9700 4750
+Wire Wire Line
+	9700 4750 10050 4750
+Wire Wire Line
+	9200 4950 9400 4950
+Wire Wire Line
+	9400 4950 9400 5050
+Wire Wire Line
+	9400 5050 9600 5050
+Wire Wire Line
+	9950 5050 9950 5150
+Wire Wire Line
+	9950 5150 10050 5150
+$Comp
+L k64-io-pcb-rescue:GS2-conn J5
+U 1 1 5C7F18D3
+P 10050 5400
+F 0 "J5" H 10118 5400 50  0000 L CNN
+F 1 "GS2" H 10118 5355 50  0001 L CNN
+F 2 "Connectors:GS2" V 10124 5400 50  0001 C CNN
+F 3 "" H 10050 5400 50  0001 C CNN
+	1    10050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C45
+U 1 1 5C7FDBC1
+P 9750 5200
+F 0 "C45" H 9750 5100 50  0000 L CNN
+F 1 "100n" H 9800 5300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9750 5200 50  0001 C CNN
+F 3 "" H 9750 5200 50  0000 C CNN
+	1    9750 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 5200 9900 5200
+Wire Wire Line
+	9650 5200 9600 5200
+Wire Wire Line
+	9600 5200 9600 5050
+Connection ~ 9600 5050
+Wire Wire Line
+	9600 5050 9950 5050
+Wire Wire Line
+	9200 5050 9350 5050
+Wire Wire Line
+	9350 5050 9350 5300
+Wire Wire Line
+	9350 5300 9900 5300
+Wire Wire Line
+	9900 5300 9900 5200
+Connection ~ 9900 5200
+Wire Wire Line
+	9900 5200 9850 5200
+Wire Wire Line
+	9200 5150 9300 5150
+Wire Wire Line
+	9300 5150 9300 5350
+Wire Wire Line
+	9300 5350 9900 5350
+Wire Wire Line
+	9900 5350 9900 5600
+Wire Wire Line
+	9900 5600 10050 5600
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR082
+U 1 1 5C81C8FB
+P 9250 5350
+F 0 "#PWR082" H 9250 5100 50  0001 C CNN
+F 1 "GND" H 9250 5200 50  0000 C CNN
+F 2 "" H 9250 5350 50  0000 C CNN
+F 3 "" H 9250 5350 50  0000 C CNN
+	1    9250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5250 9250 5250
+Wire Wire Line
+	9250 5250 9250 5350
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR083
+U 1 1 5C8236AD
+P 8150 5400
+F 0 "#PWR083" H 8150 5150 50  0001 C CNN
+F 1 "GND" H 8150 5250 50  0000 C CNN
+F 2 "" H 8150 5400 50  0000 C CNN
+F 3 "" H 8150 5400 50  0000 C CNN
+	1    8150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5150 8150 5150
+Wire Wire Line
+	8150 5150 8150 5250
+Wire Wire Line
+	8200 5250 8150 5250
+Connection ~ 8150 5250
+Wire Wire Line
+	8150 5250 8150 5350
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR0145
+U 1 1 5C831CF2
+P 8150 4050
+F 0 "#PWR0145" H 8150 3900 50  0001 C CNN
+F 1 "+3V3" H 8150 4190 50  0000 C CNN
+F 2 "" H 8150 4050 50  0000 C CNN
+F 3 "" H 8150 4050 50  0000 C CNN
+	1    8150 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L wazombi:L_Small L13
+U 1 1 5C832025
+P 8150 4200
+F 0 "L13" H 8109 4200 50  0000 R CNN
+F 1 "L_Small" V 8063 4200 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 8150 4200 50  0001 C CNN
+F 3 "" H 8150 4200 50  0000 C CNN
+	1    8150 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C44
+U 1 1 5C8321A1
+P 7950 4350
+F 0 "C44" H 7950 4250 50  0000 L CNN
+F 1 "100n" H 8000 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7950 4350 50  0001 C CNN
+F 3 "" H 7950 4350 50  0000 C CNN
+	1    7950 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 4050 8150 4100
+Wire Wire Line
+	8200 4350 8150 4350
+Wire Wire Line
+	8150 4300 8150 4350
+Connection ~ 8150 4350
+Wire Wire Line
+	8150 4350 8050 4350
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR0146
+U 1 1 5C848604
+P 7750 4350
+F 0 "#PWR0146" H 7750 4100 50  0001 C CNN
+F 1 "GND" V 7750 4150 50  0000 C CNN
+F 2 "" H 7750 4350 60  0000 C CNN
+F 3 "" H 7750 4350 60  0000 C CNN
+	1    7750 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 4350 7750 4350
+$Comp
+L k64-io-pcb-rescue:C_Small-RESCUE-k64-io-pcb C43
+U 1 1 5C850088
+P 7700 4600
+F 0 "C43" H 7700 4500 50  0000 L CNN
+F 1 "100n" H 7750 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7700 4600 50  0001 C CNN
+F 3 "" H 7700 4600 50  0000 C CNN
+	1    7700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:GND-RESCUE-k64-io-pcb #PWR0147
+U 1 1 5C85011D
+P 7700 4750
+F 0 "#PWR0147" H 7700 4500 50  0001 C CNN
+F 1 "GND" H 7700 4600 50  0000 C CNN
+F 2 "" H 7700 4750 50  0000 C CNN
+F 3 "" H 7700 4750 50  0000 C CNN
+	1    7700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4700 7700 4750
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR0148
+U 1 1 5C857DA8
+P 7600 4450
+F 0 "#PWR0148" H 7600 4300 50  0001 C CNN
+F 1 "+3V3" V 7600 4650 50  0000 C CNN
+F 2 "" H 7600 4450 50  0000 C CNN
+F 3 "" H 7600 4450 50  0000 C CNN
+	1    7600 4450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7600 4450 7700 4450
+Wire Wire Line
+	7700 4450 7700 4500
+Wire Wire Line
+	7700 4450 8200 4450
+Connection ~ 7700 4450
+Wire Wire Line
+	8200 4550 7950 4550
+Wire Wire Line
+	8200 4650 7950 4650
+Wire Wire Line
+	8200 4750 7950 4750
+Wire Wire Line
+	8200 4850 7950 4850
+Wire Wire Line
+	8200 4950 7950 4950
+Text Label 1000 3200 0    60   ~ 0
+MISO
+Text Label 1000 3300 0    60   ~ 0
+MOSI
+Text Label 1000 3400 0    60   ~ 0
+SCK
+Text Label 1000 3500 0    60   ~ 0
+CS0
+Text Label 1000 3600 0    60   ~ 0
+CS1
+Text Label 1000 3700 0    60   ~ 0
+CS2
+Text Label 7950 4750 0    60   ~ 0
+SCK
+Text Label 7950 4850 0    60   ~ 0
+CS0
+Text Label 7950 4950 0    60   ~ 0
+MISO
+Text Label 7950 4650 0    60   ~ 0
+MOSI
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R35
+U 1 1 5C8931C0
+P 7600 5250
+F 0 "R35" H 7630 5270 50  0000 L CNN
+F 1 "10k" H 7630 5210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 7600 5250 50  0001 C CNN
+F 3 "" H 7600 5250 50  0000 C CNN
+	1    7600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR0149
+U 1 1 5C893406
+P 7600 5150
+F 0 "#PWR0149" H 7600 5000 50  0001 C CNN
+F 1 "+3V3" H 7600 5290 50  0000 C CNN
+F 2 "" H 7600 5150 50  0000 C CNN
+F 3 "" H 7600 5150 50  0000 C CNN
+	1    7600 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5350 7600 5450
+Text Label 7600 5450 0    60   ~ 0
+CS0
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R34
+U 1 1 5C8A4B5E
+P 7350 5250
+F 0 "R34" H 7380 5270 50  0000 L CNN
+F 1 "10k" H 7380 5210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 7350 5250 50  0001 C CNN
+F 3 "" H 7350 5250 50  0000 C CNN
+	1    7350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR0150
+U 1 1 5C8A4B64
+P 7350 5150
+F 0 "#PWR0150" H 7350 5000 50  0001 C CNN
+F 1 "+3V3" H 7350 5290 50  0000 C CNN
+F 2 "" H 7350 5150 50  0000 C CNN
+F 3 "" H 7350 5150 50  0000 C CNN
+	1    7350 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5350 7350 5450
+Text Label 7350 5450 0    60   ~ 0
+SCK
+$Comp
+L k64-io-pcb-rescue:R_Small-RESCUE-k64-io-pcb R36
+U 1 1 5C8AD7B3
+P 7850 5250
+F 0 "R36" H 7880 5270 50  0000 L CNN
+F 1 "10k" H 7880 5210 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 7850 5250 50  0001 C CNN
+F 3 "" H 7850 5250 50  0000 C CNN
+	1    7850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:+3V3-RESCUE-k64-io-pcb #PWR0151
+U 1 1 5C8AD7B9
+P 7850 5150
+F 0 "#PWR0151" H 7850 5000 50  0001 C CNN
+F 1 "+3V3" H 7850 5290 50  0000 C CNN
+F 2 "" H 7850 5150 50  0000 C CNN
+F 3 "" H 7850 5150 50  0000 C CNN
+	1    7850 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5350 7850 5450
+Text Label 7850 5450 0    60   ~ 0
+MOSI
+Wire Wire Line
+	8200 5350 8150 5350
+Connection ~ 8150 5350
+Wire Wire Line
+	8150 5350 8150 5400
+$Comp
+L Connector:Conn_02x20_Odd_Even J?
+U 1 1 5CB05392
+P 1350 6400
+F 0 "J?" H 1400 7517 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 1400 7426 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_40pins" H 1350 6400 50  0001 C CNN
+F 3 "~" H 1350 6400 50  0001 C CNN
+	1    1350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L k64-io-pcb-rescue:CONN_01X02-RESCUE-k64-io-pcb P?
+U 1 1 5CB14767
+P 5200 4300
+F 0 "P?" H 5200 4450 50  0000 C CNN
+F 1 "MBUS POWER" V 5300 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5200 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0000 C CNN
+F 4 "?" H 5200 4300 50  0001 C CNN "Price"
+F 5 "?" H 5200 4300 50  0001 C CNN "Source"
+F 6 "?" H 5200 4300 50  0001 C CNN "Notes"
+	1    5200 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4150 5450 4150
+Wire Wire Line
+	5450 4150 5450 4250
+Wire Wire Line
+	5450 4250 5400 4250
+$Comp
+L k64-io-pcb-rescue:+12V-RESCUE-k64-io-pcb #PWR?
+U 1 1 5CB1E12E
+P 5400 4350
+F 0 "#PWR?" H 5400 4200 50  0001 C CNN
+F 1 "+12V" V 5400 4550 50  0000 C CNN
+F 2 "" H 5400 4350 50  0000 C CNN
+F 3 "" H 5400 4350 50  0000 C CNN
+	1    5400 4350
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

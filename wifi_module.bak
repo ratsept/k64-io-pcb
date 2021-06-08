@@ -1,0 +1,442 @@
+EESchema Schematic File Version 3
+LIBS:mdo_control_panel-pcb-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_relay
+LIBS:wazombi
+LIBS:mdo_control_panel-pcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266-07 U13
+U 1 1 57DA7D45
+P 6000 4750
+AR Path="/57DA7D45" Ref="U13"  Part="1" 
+AR Path="/57DA7AC0/57DA7D45" Ref="U13"  Part="1" 
+F 0 "U13" H 5700 5400 60  0000 C CNN
+F 1 "ESP8266-07" H 6000 4300 60  0000 C CNN
+F 2 "wazombi:ESP-07v2" H 6000 4750 60  0001 C CNN
+F 3 "" H 6000 4750 60  0001 C CNN
+F 4 "?" H 6000 4750 60  0001 C CNN "Price"
+F 5 "?" H 6000 4750 60  0001 C CNN "Source"
+F 6 "?" H 6000 4750 60  0001 C CNN "Notes"
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR74
+U 1 1 57DA88A9
+P 5450 5050
+F 0 "#PWR74" H 5450 4800 50  0001 C CNN
+F 1 "GND" H 5450 4900 50  0000 C CNN
+F 2 "" H 5450 5050 50  0000 C CNN
+F 3 "" H 5450 5050 50  0000 C CNN
+	1    5450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW2
+U 1 1 57DA9CA5
+P 5300 3500
+F 0 "SW2" V 5300 3650 50  0000 C CNN
+F 1 "RESET" H 5300 3450 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVQQ2" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0000 C CNN
+	1    5300 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW3
+U 1 1 57DA9CF6
+P 5700 3500
+F 0 "SW3" V 5700 3650 50  0000 C CNN
+F 1 "FLASH" H 5700 3450 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVQQ2" H 5700 3700 50  0001 C CNN
+F 3 "" H 5700 3700 50  0000 C CNN
+	1    5700 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR72
+U 1 1 57DAAB46
+P 5300 3650
+F 0 "#PWR72" H 5300 3400 50  0001 C CNN
+F 1 "GND" H 5300 3500 50  0000 C CNN
+F 2 "" H 5300 3650 50  0000 C CNN
+F 3 "" H 5300 3650 50  0000 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR76
+U 1 1 57DAAB5D
+P 5700 3650
+F 0 "#PWR76" H 5700 3400 50  0001 C CNN
+F 1 "GND" H 5700 3500 50  0000 C CNN
+F 2 "" H 5700 3650 50  0000 C CNN
+F 3 "" H 5700 3650 50  0000 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R43
+U 1 1 57DAABC6
+P 5150 4550
+F 0 "R43" V 5100 4650 50  0000 L CNN
+F 1 "68R" V 5100 4300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5150 4550 50  0001 C CNN
+F 3 "" H 5150 4550 50  0000 C CNN
+	1    5150 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R40
+U 1 1 57DAB67B
+P 6400 3000
+F 0 "R40" H 6250 2900 50  0000 L CNN
+F 1 "10k" H 6450 3000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 6400 3000 50  0001 C CNN
+F 3 "" H 6400 3000 50  0000 C CNN
+	1    6400 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R39
+U 1 1 57DABCD4
+P 6050 3000
+F 0 "R39" H 5900 2900 50  0000 L CNN
+F 1 "10k" H 6100 3000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 6050 3000 50  0001 C CNN
+F 3 "" H 6050 3000 50  0000 C CNN
+	1    6050 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R38
+U 1 1 57DAC80C
+P 5300 3000
+F 0 "R38" H 5150 2900 50  0000 L CNN
+F 1 "10k" H 5350 3000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5300 3000 50  0001 C CNN
+F 3 "" H 5300 3000 50  0000 C CNN
+	1    5300 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 4250 5450 4250
+Wire Wire Line
+	5300 3350 5300 3100
+$Comp
+L R_Small R41
+U 1 1 57DAC93B
+P 5700 3200
+F 0 "R41" H 5550 3100 50  0000 L CNN
+F 1 "10k" H 5750 3200 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5700 3200 50  0001 C CNN
+F 3 "" H 5700 3200 50  0000 C CNN
+	1    5700 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3300 5700 3350
+Wire Wire Line
+	6050 2900 6050 2900
+Wire Wire Line
+	6050 3350 6050 3100
+Wire Wire Line
+	6400 3100 6400 3350
+Text HLabel 5300 4950 0    60   Input ~ 0
+CH_PD
+Text HLabel 6400 3350 3    60   Input ~ 0
+CH_PD
+Text HLabel 5700 3300 2    60   Input ~ 0
+GPIO0
+Text HLabel 6050 3350 3    60   BiDi ~ 0
+GPIO2
+Text HLabel 6500 5050 2    60   Input ~ 0
+GPIO0
+Text HLabel 6500 4950 2    60   BiDi ~ 0
+GPIO2
+Text HLabel 5300 3150 2    60   Input ~ 0
+RST
+Text HLabel 5300 4350 0    60   Input ~ 0
+RST
+Wire Wire Line
+	5250 4550 5450 4550
+$Comp
+L R_Small R44
+U 1 1 57DAF572
+P 5150 4650
+F 0 "R44" V 5100 4750 50  0000 L CNN
+F 1 "68R" V 5100 4400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5150 4650 50  0001 C CNN
+F 3 "" H 5150 4650 50  0000 C CNN
+	1    5150 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 4650 5450 4650
+Text HLabel 4850 4550 0    60   Input ~ 0
+RXD
+Wire Wire Line
+	4850 4550 5050 4550
+Text HLabel 4850 4650 0    60   Output ~ 0
+TXD
+Wire Wire Line
+	4850 4650 5050 4650
+Wire Wire Line
+	5450 4350 5300 4350
+Wire Wire Line
+	5300 4950 5450 4950
+$Comp
+L Led_Small D14
+U 1 1 57DB0966
+P 5700 3000
+F 0 "D14" H 5650 3125 50  0000 L CNN
+F 1 "Led_Small" H 5525 2900 50  0001 L CNN
+F 2 "LEDs:LED_0805" V 5700 3000 50  0001 C CNN
+F 3 "" V 5700 3000 50  0000 C CNN
+	1    5700 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C45
+U 1 1 57DB0F55
+P 4850 3200
+F 0 "C45" H 4860 3270 50  0000 L CNN
+F 1 "100n" H 4860 3120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4850 3200 50  0001 C CNN
+F 3 "" H 4850 3200 50  0000 C CNN
+	1    4850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR70
+U 1 1 57DB1041
+P 4850 3300
+F 0 "#PWR70" H 4850 3050 50  0001 C CNN
+F 1 "GND" H 4850 3150 50  0000 C CNN
+F 2 "" H 4850 3300 50  0000 C CNN
+F 3 "" H 4850 3300 50  0000 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 3400 1    39   ~ 0
+Close to VCC
+Text Label 5450 4850 2    59   ~ 0
+ADC
+Text Label 6500 4250 0    59   ~ 0
+GPIO16
+Text Label 6500 4450 0    59   ~ 0
+GPIO14
+Text Label 6500 4550 0    59   ~ 0
+GPIO13
+Text Label 6500 4650 0    59   ~ 0
+GPIO12
+Text Label 6500 4750 0    59   ~ 0
+GPIO5
+Text Label 6500 4850 0    59   ~ 0
+GPIO4
+Text Notes 6850 5000 0    39   ~ 0
+BOOT MODE
+Text HLabel 1900 3150 0    59   Input ~ 0
+RST
+Text Label 4000 2850 0    59   ~ 0
+ADC
+Text HLabel 1900 3550 0    60   Input ~ 0
+CH_PD
+Text Label 4000 3150 0    59   ~ 0
+GPIO16
+Text Label 4000 3550 0    59   ~ 0
+GPIO14
+Text Label 1900 3050 2    59   ~ 0
+GPIO12
+Text Label 1900 3350 2    59   ~ 0
+GPIO13
+$Comp
+L GND #PWR68
+U 1 1 57DB48CE
+P 1900 3650
+F 0 "#PWR68" H 1900 3400 50  0001 C CNN
+F 1 "GND" V 1900 3450 50  0000 C CNN
+F 2 "" H 1900 3650 50  0000 C CNN
+F 3 "" H 1900 3650 50  0000 C CNN
+	1    1900 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R42
+U 1 1 57DB496D
+P 6850 3350
+F 0 "R42" H 6700 3250 50  0000 L CNN
+F 1 "10k" H 6900 3350 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 6850 3350 50  0001 C CNN
+F 3 "" H 6850 3350 50  0000 C CNN
+	1    6850 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR79
+U 1 1 57DB4973
+P 6850 3650
+F 0 "#PWR79" H 6850 3400 50  0001 C CNN
+F 1 "GND" H 6850 3500 50  0000 C CNN
+F 2 "" H 6850 3650 50  0000 C CNN
+F 3 "" H 6850 3650 50  0000 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3450 6850 3650
+Text HLabel 6850 3100 1    60   Input ~ 0
+GPIO15
+Wire Wire Line
+	6850 3100 6850 3250
+Text HLabel 6500 4350 2    60   Input ~ 0
+GPIO15
+Text HLabel 4000 3050 2    60   Input ~ 0
+GPIO15
+Text HLabel 4000 2950 2    60   BiDi ~ 0
+GPIO2
+Text HLabel 4000 2750 2    60   Input ~ 0
+GPIO0
+Text Label 4000 3650 0    59   ~ 0
+GPIO4
+Text Label 4000 3250 0    59   ~ 0
+GPIO5
+Text HLabel 1900 2950 0    60   Input ~ 0
+RXD
+Text HLabel 1900 2850 0    60   Output ~ 0
+TXD
+$Comp
+L +3.3V #PWR69
+U 1 1 59722187
+P 4850 3100
+F 0 "#PWR69" H 4850 2950 50  0001 C CNN
+F 1 "+3.3V" H 4865 3273 50  0000 C CNN
+F 2 "" H 4850 3100 50  0001 C CNN
+F 3 "" H 4850 3100 50  0001 C CNN
+	1    4850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR71
+U 1 1 59722250
+P 5300 2900
+F 0 "#PWR71" H 5300 2750 50  0001 C CNN
+F 1 "+3.3V" H 5315 3073 50  0000 C CNN
+F 2 "" H 5300 2900 50  0001 C CNN
+F 3 "" H 5300 2900 50  0001 C CNN
+	1    5300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR75
+U 1 1 59722277
+P 5700 2900
+F 0 "#PWR75" H 5700 2750 50  0001 C CNN
+F 1 "+3.3V" H 5715 3073 50  0000 C CNN
+F 2 "" H 5700 2900 50  0001 C CNN
+F 3 "" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR77
+U 1 1 5972229E
+P 6050 2900
+F 0 "#PWR77" H 6050 2750 50  0001 C CNN
+F 1 "+3.3V" H 6065 3073 50  0000 C CNN
+F 2 "" H 6050 2900 50  0001 C CNN
+F 3 "" H 6050 2900 50  0001 C CNN
+	1    6050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR78
+U 1 1 597222C5
+P 6400 2900
+F 0 "#PWR78" H 6400 2750 50  0001 C CNN
+F 1 "+3.3V" H 6415 3073 50  0000 C CNN
+F 2 "" H 6400 2900 50  0001 C CNN
+F 3 "" H 6400 2900 50  0001 C CNN
+	1    6400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR67
+U 1 1 597223B1
+P 1900 2750
+F 0 "#PWR67" H 1900 2600 50  0001 C CNN
+F 1 "+3.3V" V 1915 2878 50  0000 L CNN
+F 2 "" H 1900 2750 50  0001 C CNN
+F 3 "" H 1900 2750 50  0001 C CNN
+	1    1900 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR73
+U 1 1 5972242D
+P 5300 4250
+F 0 "#PWR73" H 5300 4100 50  0001 C CNN
+F 1 "+3.3V" H 5315 4423 50  0000 C CNN
+F 2 "" H 5300 4250 50  0001 C CNN
+F 3 "" H 5300 4250 50  0001 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L XBEE XB1
+U 1 1 598DF9B4
+P 2950 3200
+F 0 "XB1" H 2950 4487 60  0000 C CNN
+F 1 "XBEE" H 2950 4381 60  0000 C CNN
+F 2 "wazombi:xbee_pro" H 2950 3200 60  0001 C CNN
+F 3 "" H 2950 3200 60  0000 C CNN
+	1    2950 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 3450
+NoConn ~ 4000 3350
+NoConn ~ 1900 3250
+NoConn ~ 1900 3450
+$EndSCHEMATC

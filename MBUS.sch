@@ -1,0 +1,575 @@
+EESchema Schematic File Version 4
+LIBS:k64-io-pcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9350 2850 2    60   BiDi ~ 0
+MBus+
+Text HLabel 9350 2950 2    60   BiDi ~ 0
+MBus-
+$Comp
+L wazombi:R_Small R32
+U 1 1 5C76D699
+P 8950 3000
+F 0 "R32" H 9009 3046 50  0000 L CNN
+F 1 "220k" H 9009 2955 50  0000 L CNN
+F 2 "" H 8950 3000 50  0000 C CNN
+F 3 "" H 8950 3000 50  0000 C CNN
+	1    8950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2850 8950 2850
+Wire Wire Line
+	8950 2850 8950 2900
+$Comp
+L device:Q_NPN_BCE Q2
+U 1 1 5C76D841
+P 8700 3750
+F 0 "Q2" H 8891 3750 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 8890 3705 50  0001 L CNN
+F 2 "" H 8900 3850 50  0001 C CNN
+F 3 "" H 8700 3750 50  0001 C CNN
+	1    8700 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:Q_PNP_BCE Q3
+U 1 1 5C76D8F0
+P 8850 3400
+F 0 "Q3" H 9041 3400 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 9041 3445 50  0001 L CNN
+F 2 "" H 9050 3500 50  0001 C CNN
+F 3 "" H 8850 3400 50  0001 C CNN
+	1    8850 3400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8950 3100 8950 3150
+Wire Wire Line
+	8950 3150 9250 3150
+Wire Wire Line
+	9250 3150 9250 2950
+Wire Wire Line
+	9250 2950 9350 2950
+Connection ~ 8950 3150
+Wire Wire Line
+	8950 3150 8950 3200
+$Comp
+L wazombi:R_Small R33
+U 1 1 5C76D9BD
+P 8950 4100
+F 0 "R33" H 9009 4146 50  0000 L CNN
+F 1 "82R" H 9009 4055 50  0000 L CNN
+F 2 "" H 8950 4100 50  0000 C CNN
+F 3 "" H 8950 4100 50  0000 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5C76DB27
+P 8950 4250
+F 0 "#PWR08" H 8950 4000 50  0001 C CNN
+F 1 "GND" H 8955 4077 50  0000 C CNN
+F 2 "" H 8950 4250 50  0001 C CNN
+F 3 "" H 8950 4250 50  0001 C CNN
+	1    8950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C76DB41
+P 8600 4250
+F 0 "#PWR09" H 8600 4000 50  0001 C CNN
+F 1 "GND" H 8605 4077 50  0000 C CNN
+F 2 "" H 8600 4250 50  0001 C CNN
+F 3 "" H 8600 4250 50  0001 C CNN
+	1    8600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4200 8950 4250
+$Comp
+L wazombi:R_Small R31
+U 1 1 5C76DCA3
+P 8050 4050
+F 0 "R31" H 8109 4096 50  0000 L CNN
+F 1 "3k3" H 8109 4005 50  0000 L CNN
+F 2 "" H 8050 4050 50  0000 C CNN
+F 3 "" H 8050 4050 50  0000 C CNN
+	1    8050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:R_Small R30
+U 1 1 5C76DD13
+P 8050 3000
+F 0 "R30" H 8109 3046 50  0000 L CNN
+F 1 "33k" H 8109 2955 50  0000 L CNN
+F 2 "" H 8050 3000 50  0000 C CNN
+F 3 "" H 8050 3000 50  0000 C CNN
+	1    8050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2850 8050 2850
+Wire Wire Line
+	8050 2850 8050 2900
+Connection ~ 8950 2850
+$Comp
+L power:GND #PWR021
+U 1 1 5C76E0EC
+P 8050 4250
+F 0 "#PWR021" H 8050 4000 50  0001 C CNN
+F 1 "GND" H 8055 4077 50  0000 C CNN
+F 2 "" H 8050 4250 50  0001 C CNN
+F 3 "" H 8050 4250 50  0001 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4150 8050 4250
+Wire Wire Line
+	8050 3100 8050 3500
+Wire Wire Line
+	8950 3600 8950 3750
+Wire Wire Line
+	8600 4250 8600 3950
+Wire Wire Line
+	8900 3750 8950 3750
+Connection ~ 8950 3750
+Wire Wire Line
+	8950 3750 8950 4000
+Wire Wire Line
+	8600 3550 8600 3500
+Wire Wire Line
+	8600 3500 8050 3500
+Connection ~ 8050 3500
+Wire Wire Line
+	8050 3500 8050 3950
+$Comp
+L wazombi:R_Small R28
+U 1 1 5C77A667
+P 7800 3000
+F 0 "R28" H 7859 3046 50  0000 L CNN
+F 1 "39k" H 7859 2955 50  0000 L CNN
+F 2 "" H 7800 3000 50  0000 C CNN
+F 3 "" H 7800 3000 50  0000 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2850 7800 2850
+Wire Wire Line
+	7800 2850 7800 2900
+Connection ~ 8050 2850
+$Comp
+L wazombi:R_Small R29
+U 1 1 5C77A8CA
+P 7800 4050
+F 0 "R29" H 7859 4096 50  0000 L CNN
+F 1 "22k" H 7859 4005 50  0000 L CNN
+F 2 "" H 7800 4050 50  0000 C CNN
+F 3 "" H 7800 4050 50  0000 C CNN
+	1    7800 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5C77A930
+P 7800 4250
+F 0 "#PWR022" H 7800 4000 50  0001 C CNN
+F 1 "GND" H 7805 4077 50  0000 C CNN
+F 2 "" H 7800 4250 50  0001 C CNN
+F 3 "" H 7800 4250 50  0001 C CNN
+	1    7800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4250 7800 4150
+Wire Wire Line
+	7800 3950 7800 3400
+Wire Wire Line
+	8650 3400 7800 3400
+Connection ~ 7800 3400
+Wire Wire Line
+	7800 3400 7800 3100
+$Comp
+L device:Q_NPN_BCE Q1
+U 1 1 5C77BC5A
+P 7150 3750
+F 0 "Q1" H 7341 3750 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 7341 3705 50  0001 L CNN
+F 2 "" H 7350 3850 50  0001 C CNN
+F 3 "" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3400 7250 3400
+Wire Wire Line
+	7250 3400 7250 3550
+$Comp
+L power:GND #PWR074
+U 1 1 5C77C422
+P 7250 4250
+F 0 "#PWR074" H 7250 4000 50  0001 C CNN
+F 1 "GND" H 7255 4077 50  0000 C CNN
+F 2 "" H 7250 4250 50  0001 C CNN
+F 3 "" H 7250 4250 50  0001 C CNN
+	1    7250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4250 7250 3950
+$Comp
+L wazombi:R_Small R8
+U 1 1 5C77C888
+P 6750 3750
+F 0 "R8" V 6900 3750 50  0000 C CNN
+F 1 "1k" V 6800 3750 50  0000 C CNN
+F 2 "" H 6750 3750 50  0000 C CNN
+F 3 "" H 6750 3750 50  0000 C CNN
+	1    6750 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 3750 6950 3750
+$Comp
+L wazombi:R_Small R7
+U 1 1 5C77CD81
+P 6750 3500
+F 0 "R7" V 6554 3500 50  0000 C CNN
+F 1 "1k" V 6645 3500 50  0000 C CNN
+F 2 "" H 6750 3500 50  0000 C CNN
+F 3 "" H 6750 3500 50  0000 C CNN
+	1    6750 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3500 8050 3500
+Text HLabel 6550 3750 0    60   Input ~ 0
+TXD
+Text HLabel 6550 3500 0    60   Output ~ 0
+RXD
+Wire Wire Line
+	6550 3500 6650 3500
+Wire Wire Line
+	6650 3750 6550 3750
+Text HLabel 2550 1800 0    60   Input ~ 0
+MBus_V+
+Wire Wire Line
+	6550 2850 7800 2850
+Connection ~ 7800 2850
+$Comp
+L wazombi:LMR62421 U9
+U 1 1 5C78A477
+P 3500 2300
+F 0 "U9" H 3500 2647 60  0000 C CNN
+F 1 "LMR62421" H 3500 2541 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3500 1700 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmr62421.pdf" H 3500 1600 60  0001 C CNN
+F 4 "1.15 € @ 100 pcs" H 3500 2000 60  0001 C CNN "Price"
+F 5 "https://www.mouser.ee/ProductDetail/Texas-Instruments/LMR62421XMFX-NOPB?qs=sGAEpiMZZMtitjHzVIkrqbD6NS%2Flzpx9baX%2FxGOIQAs%3D" H 3500 1900 60  0001 C CNN "Source"
+F 6 "?" H 3500 1800 60  0001 C CNN "Notes"
+	1    3500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:L_Small L12
+U 1 1 5C78A6C7
+P 3500 1800
+F 0 "L12" V 3685 1800 50  0000 C CNN
+F 1 "L_Small" V 3594 1800 50  0000 C CNN
+F 2 "Inductors:NR4018_HandSoldering" H 3500 1800 50  0001 C CNN
+F 3 "" H 3500 1800 50  0000 C CNN
+	1    3500 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2200 2700 2200
+Wire Wire Line
+	2700 2200 2700 1800
+Wire Wire Line
+	2700 1800 3400 1800
+Wire Wire Line
+	2700 1800 2550 1800
+Connection ~ 2700 1800
+$Comp
+L wazombi:R_Small R4
+U 1 1 5C78BC75
+P 2900 2300
+F 0 "R4" V 2704 2300 50  0000 C CNN
+F 1 "1M" V 2795 2300 50  0000 C CNN
+F 2 "" H 2900 2300 50  0000 C CNN
+F 3 "" H 2900 2300 50  0000 C CNN
+	1    2900 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2300 3050 2300
+Wire Wire Line
+	2800 2300 2700 2300
+Wire Wire Line
+	2700 2300 2700 2200
+Connection ~ 2700 2200
+$Comp
+L power:GND #PWR075
+U 1 1 5C78CCDF
+P 2650 2400
+F 0 "#PWR075" H 2650 2150 50  0001 C CNN
+F 1 "GND" V 2655 2272 50  0000 R CNN
+F 2 "" H 2650 2400 50  0001 C CNN
+F 3 "" H 2650 2400 50  0001 C CNN
+	1    2650 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2400 2650 2400
+Wire Wire Line
+	3050 2300 3050 2550
+Wire Wire Line
+	3050 2550 2550 2550
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3000 2300
+Text HLabel 2550 2550 0    60   Input ~ 0
+MBus_EN
+Wire Wire Line
+	4000 1800 4000 2200
+Wire Wire Line
+	4000 2200 3900 2200
+Wire Wire Line
+	3600 1800 4000 1800
+$Comp
+L wazombi:C_Small C38
+U 1 1 5C78F70E
+P 2500 2200
+F 0 "C38" V 2271 2200 50  0000 C CNN
+F 1 "22u" V 2362 2200 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 2500 2200 50  0001 C CNN
+F 3 "" H 2500 2200 50  0000 C CNN
+	1    2500 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 2200 2700 2200
+$Comp
+L power:GND #PWR076
+U 1 1 5C7903D8
+P 2300 2200
+F 0 "#PWR076" H 2300 1950 50  0001 C CNN
+F 1 "GND" V 2305 2072 50  0000 R CNN
+F 2 "" H 2300 2200 50  0001 C CNN
+F 3 "" H 2300 2200 50  0001 C CNN
+	1    2300 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 2200 2400 2200
+$Comp
+L wazombi:D_Schottky_Small D3
+U 1 1 5C7910DA
+P 4150 1800
+F 0 "D3" H 4150 1595 50  0000 C CNN
+F 1 "D_Schottky_Small" H 4150 1686 50  0000 C CNN
+F 2 "" V 4150 1800 50  0000 C CNN
+F 3 "" V 4150 1800 50  0000 C CNN
+	1    4150 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 1800 4000 1800
+Connection ~ 4000 1800
+Text HLabel 5450 1800 2    60   Output ~ 0
+MBus_Vout
+Wire Wire Line
+	5450 1800 5200 1800
+$Comp
+L wazombi:C_Small C39
+U 1 1 5C792C38
+P 4300 1950
+F 0 "C39" H 4392 1996 50  0000 L CNN
+F 1 "4u7" H 4392 1905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 4300 1950 50  0001 C CNN
+F 3 "" H 4300 1950 50  0000 C CNN
+	1    4300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:C_Small C40
+U 1 1 5C792CE2
+P 4600 1950
+F 0 "C40" H 4692 1996 50  0000 L CNN
+F 1 "47u" H 4692 1905 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_4x5.3" H 4600 1950 50  0001 C CNN
+F 3 "" H 4600 1950 50  0000 C CNN
+	1    4600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR077
+U 1 1 5C792DDC
+P 4300 2100
+F 0 "#PWR077" H 4300 1850 50  0001 C CNN
+F 1 "GND" H 4305 1927 50  0000 C CNN
+F 2 "" H 4300 2100 50  0001 C CNN
+F 3 "" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR078
+U 1 1 5C792E0B
+P 4600 2100
+F 0 "#PWR078" H 4600 1850 50  0001 C CNN
+F 1 "GND" H 4605 1927 50  0000 C CNN
+F 2 "" H 4600 2100 50  0001 C CNN
+F 3 "" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1850 4300 1800
+Connection ~ 4300 1800
+Wire Wire Line
+	4300 1800 4250 1800
+Wire Wire Line
+	4600 1850 4600 1800
+Connection ~ 4600 1800
+Wire Wire Line
+	4600 1800 4300 1800
+Wire Wire Line
+	4300 2050 4300 2100
+Wire Wire Line
+	4600 2050 4600 2100
+$Comp
+L wazombi:R_Small R5
+U 1 1 5C796B85
+P 4900 1950
+F 0 "R5" H 4959 1996 50  0000 L CNN
+F 1 "150k" H 4959 1905 50  0000 L CNN
+F 2 "" H 4900 1950 50  0000 C CNN
+F 3 "" H 4900 1950 50  0000 C CNN
+	1    4900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:R_Small R6
+U 1 1 5C798DEE
+P 4900 2550
+F 0 "R6" H 4959 2596 50  0000 L CNN
+F 1 "10k" H 4959 2505 50  0000 L CNN
+F 2 "" H 4900 2550 50  0000 C CNN
+F 3 "" H 4900 2550 50  0000 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L wazombi:C_Small C41
+U 1 1 5C798E3E
+P 4600 2550
+F 0 "C41" H 4692 2596 50  0000 L CNN
+F 1 "DNP" H 4692 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4600 2550 50  0001 C CNN
+F 3 "" H 4600 2550 50  0000 C CNN
+	1    4600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR079
+U 1 1 5C798F1D
+P 4600 2700
+F 0 "#PWR079" H 4600 2450 50  0001 C CNN
+F 1 "GND" H 4605 2527 50  0000 C CNN
+F 2 "" H 4600 2700 50  0001 C CNN
+F 3 "" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR080
+U 1 1 5C798F52
+P 4900 2700
+F 0 "#PWR080" H 4900 2450 50  0001 C CNN
+F 1 "GND" H 4905 2527 50  0000 C CNN
+F 2 "" H 4900 2700 50  0001 C CNN
+F 3 "" H 4900 2700 50  0001 C CNN
+	1    4900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1800 4900 1850
+Connection ~ 4900 1800
+Wire Wire Line
+	4900 1800 4600 1800
+Wire Wire Line
+	4900 2050 4900 2400
+Wire Wire Line
+	4900 2650 4900 2700
+Wire Wire Line
+	4600 2650 4600 2700
+$Comp
+L wazombi:C_Small C42
+U 1 1 5C79D894
+P 5200 1950
+F 0 "C42" H 5292 1996 50  0000 L CNN
+F 1 "470p" H 5292 1905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5200 1950 50  0001 C CNN
+F 3 "" H 5200 1950 50  0000 C CNN
+	1    5200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1850 5200 1800
+Connection ~ 5200 1800
+Wire Wire Line
+	5200 1800 4900 1800
+Wire Wire Line
+	3900 2400 4600 2400
+Connection ~ 4900 2400
+Wire Wire Line
+	4900 2400 4900 2450
+Wire Wire Line
+	4600 2450 4600 2400
+Connection ~ 4600 2400
+Wire Wire Line
+	4600 2400 4900 2400
+Wire Wire Line
+	4900 2400 5200 2400
+Wire Wire Line
+	5200 2400 5200 2050
+$Comp
+L wazombi:CONN_01X02 P3
+U 1 1 5C7A7232
+P 6350 2800
+F 0 "P3" H 6269 2617 50  0000 C CNN
+F 1 "CONN_01X02" H 6269 2616 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6350 2800 50  0001 C CNN
+F 3 "" H 6350 2800 50  0000 C CNN
+	1    6350 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 2750 6750 2750
+Wire Wire Line
+	6750 2750 6750 1700
+Wire Wire Line
+	6750 1700 5200 1700
+Wire Wire Line
+	5200 1700 5200 1800
+Text Notes 6800 2800 0    60   ~ 0
+MBus voltage 18..34 VDC
+$EndSCHEMATC

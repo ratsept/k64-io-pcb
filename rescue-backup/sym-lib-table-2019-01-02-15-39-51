@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name mdo_control_panel-pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/mdo_control_panel-pcb-rescue.lib)(options "")(descr ""))
+)
